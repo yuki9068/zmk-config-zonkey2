@@ -1,6 +1,5 @@
 #include <physical_layouts.dtsi>
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
@@ -195,10 +194,10 @@
 
         default_layer {
             bindings = <
-&kp Q           &kp W         &kp E         &kp R    &kp T                                           &kp Y                &kp U                  &kp I     &kp O     &kp P
-&kp A           &kp S         &kp D         &kp F    &kp G        &kp LS(LG(S))    &kp LS(NUMBER_9)  &kp H                &kp J                  &kp K     &kp L     &mt SQT ENTER
-&kp LEFT_SHIFT  &kp Z         &kp X         &kp C    &kp V        &kp B            &kp LS(NUMBER_8)  &kp N                &kp M                  &mkp MB1  &mkp MB2  &kp INSERT
-&kp LCTRL       &kp LEFT_WIN  &kp LEFT_ALT  &kp TAB  &lt 4 MINUS  &lt 2 SPACE                        &lt 3 LC(LA(SPACE))  &lt 1 INTERNATIONAL_4                                     &to 5
+&mt LANGUAGE_1 Q  &kp W         &kp E         &kp R    &kp T                                           &kp Y                &kp U                  &kp I     &kp O     &kp P
+&mt LANGUAGE_2 A  &kp S         &kp D         &kp F    &kp G        &kp LS(LG(S))    &kp LS(NUMBER_9)  &kp H                &kp J                  &kp K     &kp L     &mt SQT ENTER
+&kp LEFT_SHIFT    &kp Z         &kp X         &kp C    &kp V        &kp B            &kp LS(NUMBER_8)  &kp N                &kp M                  &mkp MB1  &mkp MB2  &kp INSERT
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp TAB  &lt 3 MINUS  &lt 2 SPACE                        &lt 3 LC(LA(SPACE))  &lt 1 INTERNATIONAL_4                                     &to 4
             >;
 
             sensor-bindings =
@@ -241,10 +240,10 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &trans  &trans    &trans       &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4
-&trans  &trans  &trans  &trans  &trans  &trans    &bootloader  &trans         &trans         &trans         &trans         &bt BT_CLR
-&trans  &trans  &trans  &trans  &trans  &trans                 &trans         &trans                                                      &bt BT_CLR_ALL
+&trans  &trans  &trans  &trans  &trans                       &trans  &kp F2             &kp LC(C)        &kp LC(V)    &kp LG(V)
+&trans  &trans  &trans  &trans  &trans  &kp LG(H)    &trans  &trans  &mkp MB1           &mkp MB3         &mkp MB3     &kp INSERT
+&trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &kp LG(Z)          &kp LC(LS(TAB))  &kp LC(TAB)  &kp ENTER
+&trans  &trans  &trans  &trans  &trans  &trans               &trans  &kp LC(LA(SPACE))                                            &to 0
             >;
 
             sensor-bindings = <&scroll_up_down>;
