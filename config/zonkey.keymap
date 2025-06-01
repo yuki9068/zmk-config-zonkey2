@@ -241,7 +241,7 @@
         layer_4 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                       &trans  &kp F2             &kp LC(C)        &kp LC(V)    &kp LG(V)
-&trans  &trans  &trans  &trans  &trans  &kp LG(H)    &trans  &trans  &mkp MB1           &mkp MB3         &mkp MB3     &kp INSERT
+&trans  &trans  &trans  &trans  &trans  &kp LG(H)    &trans  &trans  &mkp MB1           &mkp MB3         &mkp MB2     &kp INSERT
 &trans  &trans  &trans  &trans  &trans  &trans       &trans  &trans  &kp LG(Z)          &kp LC(LS(TAB))  &kp LC(TAB)  &kp ENTER
 &trans  &trans  &trans  &trans  &trans  &trans               &trans  &kp LC(LA(SPACE))                                            &to 0
             >;
